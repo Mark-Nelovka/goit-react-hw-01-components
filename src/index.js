@@ -3,11 +3,13 @@
 // import reactDom from "react-dom";
 import ReactDOM from "react-dom";
 import "./index.css";
+import data from "./data.json";
 import App from "./App";
+
 const div = document.querySelector("#root");
 // console.log(div)
 
-ReactDOM.render(<App />, div);
+ReactDOM.render(<App title={"qwe"} stats={data} />, div);
 
 // import App from './App';
 
@@ -26,5 +28,4 @@ ReactDOM.render(<App />, div);
 //   <React.StrictMode>
 //     <App />
 //   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+//   div);
