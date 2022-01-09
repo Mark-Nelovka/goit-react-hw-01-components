@@ -12,10 +12,10 @@ code {
     monospace;
 }
 
-/* #root {
+#root {
   background-color: #ccc;
   width: 450px;
   height: 450px;
   padding-top: 50px;
-  margin: 50px auto;
-} */
+  margin: 0 auto;
+}

@@ -1,16 +1,23 @@
 // import { div } from "prelude-ls";
-// import React from "react";
-// import reactDom from "react-dom";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import data from "./data.json";
-import App from "./App";
+import ProfileApp from "./App";
+import { doc } from "prettier";
+import StatisticsApp from "./Statistics";
 
 const div = document.querySelector("#root");
-// console.log(div)
 
-ReactDOM.render(<App title={"qwe"} stats={data} />, div);
+ReactDOM.render(
+  <React.StrictMode>
+    <ProfileApp />
+    <StatisticsApp />
+  </React.StrictMode>,
+  div
+);
 
+// ReactDOM.render(, div);
+// ReactDOM.render(<App />, div);
 // import App from './App';
 
 // const elem1 = <span>Hello</span>;
