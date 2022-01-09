@@ -1,4 +1,4 @@
-import PromptTypes from "prop-types";
+import PropTypes from "prop-types";
 import s from "./Transactions.module.css";
 export default function TransactionHistory({ items }) {
   return (
@@ -24,3 +24,10 @@ export default function TransactionHistory({ items }) {
     </table>
   );
 }
+
+TransactionHistory.propTypes = {
+  id: PropTypes.number,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
+  type: PropTypes.string,
+};
