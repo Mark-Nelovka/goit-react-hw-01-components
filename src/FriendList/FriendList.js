@@ -7,9 +7,9 @@ export default function FriendList({ friends }) {
         return (
           <li key={id} className={s.item}>
             {isOnline ? (
-              <span className={s.statusOn}>{isOnline}</span>
+              <span className={s.statusOn}></span>
             ) : (
-              <span className={s.statusOf}>{isOnline}</span>
+              <span className={s.statusOf}></span>
             )}
             <img
               className={s.avatar}
@@ -18,6 +18,10 @@ export default function FriendList({ friends }) {
               width="48"
             />
             <p className={s.name}>{name}</p>
+            <button type="button" className={s.btn}>
+              Написать {name}
+            </button>
+            {/* <p ></p> */}
           </li>
         );
       })}

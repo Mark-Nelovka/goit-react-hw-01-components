@@ -6,6 +6,7 @@ import ProfileApp from "./App";
 // import { doc } from "prettier";
 import StatisticsApp from "./Statistics";
 import FriendListApp from "./FriendListApp";
+import TransactionsApp from "./TransactionsApp";
 
 const div = document.querySelector("#root");
 
@@ -14,6 +15,7 @@ ReactDOM.render(
     <ProfileApp />
     <StatisticsApp />
     <FriendListApp />
+    <TransactionsApp />
   </React.StrictMode>,
   div
 );

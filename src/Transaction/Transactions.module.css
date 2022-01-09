@@ -1,0 +1,21 @@
+.transactionHistory {
+  width: 500px;
+  border: 1px solid black;
+}
+
+.tBody {
+  text-align: center;
+  width: 20px;
+}
+
+.trHead {
+  background-color: rgb(223, 223, 243);
+}
+
+.tR {
+  background-color: aqua;
+}
+
+.tD {
+  padding: 10px 10px;
+}
