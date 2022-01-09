@@ -3,8 +3,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import ProfileApp from "./App";
-import { doc } from "prettier";
+// import { doc } from "prettier";
 import StatisticsApp from "./Statistics";
+import FriendListApp from "./FriendListApp";
 
 const div = document.querySelector("#root");
 
@@ -12,6 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ProfileApp />
     <StatisticsApp />
+    <FriendListApp />
   </React.StrictMode>,
   div
 );
